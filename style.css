@@ -66,10 +66,7 @@ body {
   cursor: pointer;
 }
 
-.card img {
-  width: 100%;
-  display: block;
-}
+
 
 .immagine-hover {
   position: absolute;
@@ -85,5 +82,80 @@ body {
 
 .card:hover .immagine-front {
   opacity: 0;
+}
+
+
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 500px; 
+  overflow: hidden;
+}
+
+.immagine-front,
+.immagine-hover {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Etichetta SCONTO */
+.label {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+
+}
+
+/* Etichetta SOSTENIBILITÀ */
+.green {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.card {
+  position: relative;
+  width: 500px; 
+  display: inline-block;
+}
+
+.immagine-front {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cuoricino {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.card:hover .cuoricino {
+  color: red;
 }
 
