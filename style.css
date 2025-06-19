@@ -61,12 +61,10 @@ body {
 }
 
 .card {
-  width: 30%;
+  width: 80%;
   position: relative;
   cursor: pointer;
 }
-
-
 
 .immagine-hover {
   position: absolute;
@@ -84,15 +82,6 @@ body {
   opacity: 0;
 }
 
-
-
-.card {
-  position: relative;
-  display: inline-block;
-  width: 500px; 
-  overflow: hidden;
-}
-
 .immagine-front,
 .immagine-hover {
   width: 100%;
@@ -104,7 +93,7 @@ body {
 /* Etichetta SCONTO */
 .label {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left: 10px;
   background-color: red;
   color: white;
@@ -117,7 +106,7 @@ body {
 /* Etichetta SOSTENIBILITÀ */
 .green {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left: 80px;
   background-color: green;
   color: white;
@@ -128,10 +117,11 @@ body {
 }
 
 .card {
-  position: relative;
-  width: 500px; 
-  display: inline-block;
+  width: 100%;
+  max-width: 300px;
 }
+
+
 
 .immagine-front {
   width: 100%;
@@ -158,4 +148,33 @@ body {
 .card:hover .cuoricino {
   color: red;
 }
+
+/* footer */
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.footer-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+} 
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
 
